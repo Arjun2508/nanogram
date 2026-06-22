@@ -20,7 +20,7 @@ void enableRawMode() {
     raw.c_iflag &= ~(ICRNL | IXON);                     // ICRNL for fixing Ctrl-M, IXON for Ctrl-S and Q
     raw.c_lflag &= ~(ECHO | ICANON | ISIG | IEXTEN);    // ECHO for not echoing out, ICANON for sending every input, ISIG for disabling Ctrl C and Z, IEXTEN is for disabling Ctrl V
 
-    tcsetattr(0, TCSAFLUSH, &raw);j
+    tcsetattr(0, TCSAFLUSH, &raw);
 }
 
 int main() {

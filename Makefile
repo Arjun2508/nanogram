@@ -1,2 +1,2 @@
-kilo: kilo.c
-	$(CC) kilo.c -o kilo -Wall -Wextra -pedantic -std=c23
+nanogram: nanogram.c
+	$(CC) nanogram.c -o nanogram -Wall -Wextra -pedantic -std=c23
